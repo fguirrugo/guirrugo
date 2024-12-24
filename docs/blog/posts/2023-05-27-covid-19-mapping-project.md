@@ -24,7 +24,9 @@ A database was developed to store this data and then connected to the QuantumGIS
         <p><img alt="Portrait of Fortunato Guirrugo" class="hero-img" src="images/Profile_Picture.png"></p>
     </div>
 <figure markdown="span">
-  ![Image title](blog/images/covid.jpg)
+  ![Image title](./blog/images/covid.jpg)
+  ![Image title](./docs/blog/images/covid.jpg)
+  ![Image title](docs/blog/images/covid.jpg)
   <figcaption>Covid 19 Mapping</figcaption>
 </figure>
 Thank you to everyone who followed and supported this project!
