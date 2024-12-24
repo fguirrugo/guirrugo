@@ -20,8 +20,11 @@ It was an incredible journey developing since 2021 a tool that visualized the ev
         note left of State1 : Design the representation
 ```
 A database was developed to store this data and then connected to the QuantumGIS environment, it was possible to update the information just by typing the day of publication of the data. After that, it was enough just to update the data and the map is automatically represented using the previously created layout.
+    <div class="profile-image-grid">
+        <p><img alt="Portrait of Fortunato Guirrugo" class="hero-img" src="images/Profile_Picture.png"></p>
+    </div>
 <figure markdown="span">
-  ![Image title](http://127.0.0.1:8000/mysite/blog/images/covid.jpg)
+  ![Image title](https://fguirrugo.github.io/guirrugo/blog/images/covid.jpg)
   <figcaption>Covid 19 Mapping</figcaption>
 </figure>
 Thank you to everyone who followed and supported this project!
