@@ -1,0 +1,95 @@
+.newsletter-form {
+    max-width: 800px;
+    margin: 20px 0;
+}
+.newsletter-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: stretch;
+}
+.newsletter-form .form-field {
+    display: flex;
+    flex-direction: column;
+}
+.newsletter-form .form-field.firstname {
+    flex: 0 0 30%; /* Adjust this value to make it shorter */
+}
+.newsletter-form .form-field.email {
+    flex: 0 0 45%; /* Adjust this value to make it longer */
+}
+.newsletter-form .form-field.submit {
+    flex: 0 0 20%; /* Adjust as needed */
+}
+.newsletter-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"],
+.newsletter-form button {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.5;
+}
+.newsletter-form button {
+    background-color: #000111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.newsletter-form button:hover {
+    background-color: #2856f7;
+}
+.newsletter-form button:disabled {
+    background-color: #cccccc;
+}
+.newsletter-form .error-message {
+    color: red;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* Dark mode styles */
+[data-md-color-scheme="slate"] .newsletter-form input[type="text"],
+[data-md-color-scheme="slate"] .newsletter-form input[type="email"] {
+    background-color: #ffffff;
+    border-color: #555;
+    color: #000000;
+}
+
+[data-md-color-scheme="slate"] .newsletter-form button {
+    background-color: #8e92f8;
+    color: #000000;
+}
+
+[data-md-color-scheme="slate"] .newsletter-form button:hover {
+    background-color: #8e92f8;
+    color: #ffffff;
+}
+
+[data-md-color-scheme="slate"] .newsletter-form .error-message {
+    color: #ff6b6b;
+}
+
+
+@media (max-width: 600px) {
+    .newsletter-form form {
+        flex-direction: column;
+    }
+    .newsletter-form .form-field,
+    .newsletter-form .form-field.firstname,
+    .newsletter-form .form-field.email,
+    .newsletter-form .form-field.submit {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+}
