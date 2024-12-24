@@ -7,7 +7,7 @@ categories:
 ---
 # Analysis of Mozambique Population
 <figure markdown="span">
-  ![Image title](http://127.0.0.1:8000/mysite/blog/images/Population Density.jpg)
+  ![Image title](docs/blog/images/Population Density.jpg)
   <figcaption>Analysis of Mozambique Population</figcaption>
 </figure>
 I'm excited to share another analysis, this time looking at the population distribution of our vast and beautiful Mozambique.
