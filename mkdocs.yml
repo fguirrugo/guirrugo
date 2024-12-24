@@ -1,0 +1,84 @@
+site_name: Fortunato Guirrugo
+site_url: https://mydomain.org/mysite
+
+theme:
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+  name: material
+  palette:
+    # Palette toggle for automatic mode
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: my-custom-color-scheme
+      # primary: #000111
+      # accent: custom
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to system preference
+  font:
+    text: Roboto
+    code: Red Hat Mono
+  logo: images/alpha-g-box-outline.svg
+  favicon: images/alpha-g-box.svg
+
+  extra:
+    social:
+      - icon: fontawesome/brands/github 
+        link: https://fosstodon.org/@squidfunk   
+        name: squidfunk on Fosstodon
+      - icon: fontawesome/brands/linkedin 
+        link: https://google.com
+        name: Guirrugo
+
+copyright: Copyright &copy; 2024 Fortunato Guirrugo 
+extra:
+  generator: false
+
+extra_css:
+  - styles/extra.css
+  - styles/hero.css
+  - styles/newsletter.css
+  - styles/main.profile.css
+
+nav:
+  - Home: index.md
+  - Achievements: achievements.md
+  - Projects: projects.md
+  - Blog:
+    - blog/index.md
+    - blog/posts/2023-05-27-covid-19-mapping-project.md
+    - blog/posts/2024-07-30-Analysis-of-Mozambique-Population.md
+    - blog/posts/2023-05-05-webgis-project-covid-19.md
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+plugins:
+  - search
+  - blog:
+      authors_profiles: true
