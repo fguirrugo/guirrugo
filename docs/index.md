@@ -11,7 +11,7 @@
     <div class="text-intro-grid">
         <p>Hi! I'm <b>Fortunato Guirrugo</b>, a geospatial and education professional. One of my goals is to simplify the vast world of geospatial tools and make them accessible to everyone. My journey began when I became interested in Geographic Information Systems (GIS) and began exploring how these resources can be applied to solve environmental and planning issues.</p>
         <p>As the years go by, I remain as passionate as I was when I first started, deepening my knowledge and experiences. Today, I share these learnings and challenges through this website, recording my personal and professional growth in the areas of geospatial, education, and sustainable solutions.</p>
-    </div>
+    </div> 
     <div class="profile-image-grid">
         <p><img alt="Portrait of Fortunato Guirrugo" class="hero-img" src="images/Profile_Picture.png"></p>
     </div>
