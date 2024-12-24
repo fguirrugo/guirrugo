@@ -1,0 +1,54 @@
+.profile-image {
+  width: 250px; /* Set the width of the profile image */
+  height: 250px; /* Set a fixed height to maintain aspect ratio */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 50%; /* Makes the image circular */
+  float: right; /* Aligns the image to the right */
+  transform: scaleX(-1); /* Flip the image horizontally */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.profile-image:hover {
+  transform: scaleX(-1) scale(1.02); /* Slight zoom on hover while maintaining the flip */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Responsive adjustments for the profile image */
+@media screen and (max-width: 76.1875em) {
+  .profile-image {
+    float: none; /* Remove float for mobile layout */
+    display: block; /* Change display to block for centering */
+    margin: 0 auto 20px; /* Center the image and add bottom margin */
+    width: 200px; /* Slightly smaller on mobile */
+    height: 200px; /* Maintain aspect ratio */
+  }
+}
+
+/* Grid Layout on index page */
+.grid-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1.618fr 1fr; /* Golden ratio for column widths */
+  gap: 15px; /* Set gap between grid items */
+}
+.text-intro-grid {
+  grid-column: 1 / 2; /* Place text intro in the first column */
+}
+.profile-image-grid {
+  grid-column: 2 / 3; /* Place profile image in the second column */
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+  }
+  .text-intro-grid {
+    grid-row: 2; /* Move text intro to second row on mobile */
+    grid-column: 1; /* Span full width */
+  }
+  .profile-image-grid {
+    grid-row: 1; /* Move profile image to first row on mobile */
+    grid-column: 1; /* Span full width */
+  }
+}
